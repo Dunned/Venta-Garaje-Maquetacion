@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        :root{
+            --white: #FFFFFF;
+            --black: #000000;
+            --dark: #232830;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --sm:14px;
+            --md:16px;
+            --lg:18px;
+        }
+        body{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Quicksand', sans-serif;
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        main{
+            width: 100%;
+            height: 100vh;
+        }
+        article.contenedor{
+            width: 28%;
+            min-width: 280px;
+            margin: 0 auto;
+        }
+        .titulo{
+            font-size: var(--lg);
+            padding: 30px 0;
+        }
+        section.contenedor-total{
+            background-color: var(--text-input-field);
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2px 1rem;
+        }
+        .fecha,.precio{
+            font-weight: bold;
+            font-size: var(--md);
+            margin-bottom: 0;
+        }
+        .texto-simple{
+            font-size: 14px;
+            font-weight: 300;
+            color: var(--dark);
+            margin-top: 3px;
+
+        }
+        .ordenes{
+            padding: 30px 0;
+        }
+        .ordenes-producto{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .ordenes-producto:last-of-type{
+            margin-bottom: 0px;
+        }
+        div.detalle{
+            display: flex;
+            align-items: center;
+            column-gap: 15px;
+        }
+        img{
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+   <main>
+       <article class="contenedor">
+            <h1 class="titulo">Mi Orden</h1>
+            <section class="contenedor-total">
+                <div>
+                    <p class="fecha">04-05-2021</p>
+                    <p class="texto-simple">6 Articulos</p>
+                </div>
+                <div>
+                    <p class="precio">S/1000.00</p>
+                </div>
+            </section>
+            <ul class="ordenes">
+                <li class="ordenes-producto">
+                    <div class="detalle">
+                        <img src="img/bicicleta.jpeg" alt="Producto">
+                        <p class="texto-simple">Biclicleta</p>
+                    </div>
+                    <div class="monto">
+                        <p class="precio">S/100.00</p>
+                    </div>
+                </li>
+                <li class="ordenes-producto">
+                    <div class="detalle">
+                        <img src="img/bicicleta.jpeg" alt="Producto">
+                        <p class="texto-simple">Biclicleta</p>
+                    </div>
+                    <div class="monto">
+                        <p class="precio">S/100.00</p>
+                    </div>
+                </li>
+                <li class="ordenes-producto">
+                    <div class="detalle">
+                        <img src="img/bicicleta.jpeg" alt="Producto">
+                        <p class="texto-simple">Biclicleta</p>
+                    </div>
+                    <div class="monto">
+                        <p class="precio">S/100.00</p>
+                    </div>
+                </li>
+                <li class="ordenes-producto">
+                    <div class="detalle">
+                        <img src="img/bicicleta.jpeg" alt="Producto">
+                        <p class="texto-simple">Biclicleta</p>
+                    </div>
+                    <div class="monto">
+                        <p class="precio">S/100.00</p>
+                    </div>
+                </li>
+            </ul>
+       </article>
+   </main>
+</body>
+</html>
